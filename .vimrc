@@ -39,11 +39,7 @@ nnoremap <leader><space> :nohlsearch<CR>
 " Remap escape to jk 
 inoremap jk <esc>
 " Disable the arrow keys
-noremap  <Up> ""
-noremap! <Up> <Esc>
-noremap  <Down> ""
-noremap! <Down> <Esc>
-noremap  <Left> ""
-noremap! <Left> <Esc>
-noremap  <Right> ""
-noremap! <Right> <Esc>
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
