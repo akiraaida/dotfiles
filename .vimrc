@@ -1,24 +1,49 @@
-" Make a tab look like 4 spaces
-set tabstop=4
-" When editting, a tab is 4 spaces
-set softtabstop=4
-" Makes tabs into spaces
-set expandtab
-" Display line numbers
-set number
-" Highlight current line
-set cursorline
-" Visual autocomplete for command menu
-set wildmenu
-" Searches as characters are entered
-set incsearch
-" Keep indenting on when going to next line
-set autoindent
-" Allows pasting not to cause indenting issues
-set paste
-" Don't make tabs spaces for Makefiles
-autocmd BufEnter Makefile setlocal noexpandtab
-" Set the colorscheme to molokai
+" Set the colorscheme to monokai
 colorscheme monokai
 " Enable syntax for colors
 syntax enable
+" Represents a tab as 4 spaces visually
+set tabstop=4
+" Number of spaces inserted when tab is pressed
+set softtabstop=4
+" Tabs become spaces
+set expandtab
+" Turn on autoindent
+set autoindent
+" Show line numbers
+set number
+" Show command in the bottom bar
+set showcmd
+" Highlight the current line
+set cursorline 
+" Load filetype-specific indent files
+filetype indent on
+" Visual autocomplete for command menu
+set wildmenu
+" Redraw only when needed
+set lazyredraw
+" Highlight matching brackets
+set showmatch
+" Search as characters are entered
+set incsearch
+" Highlight matches to a search
+set hlsearch
+" Move vertically by visual line down (if lines wrap)
+nnoremap j gj
+" Move vertically by visual line up (if lines wrap)
+nnoremap k gk
+" Make leader into comma
+let mapleader=","
+" Turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+" Remap escape to jk 
+inoremap jk <esc>
+" Disable the arrow keys
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
