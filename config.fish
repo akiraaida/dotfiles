@@ -17,7 +17,7 @@ function open
 end
 
 function spot
-    spotify $argv[1] > /dev/null 2>&1 &
+    spotify > /dev/null 2>&1 &
     disown
 end
 
