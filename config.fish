@@ -1,5 +1,9 @@
+function vi
+    vim $argv[1]
+end
+
 function chrome
-    google-chrome > /dev/null 2>&1 &
+    google-chrome $argv[1] > /dev/null 2>&1 &
     disown
 end
 
