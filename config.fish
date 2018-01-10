@@ -1,3 +1,7 @@
+function sus
+    systemctl suspend
+end
+
 function vi
     vim $argv[1]
 end
