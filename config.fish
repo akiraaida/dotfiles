@@ -1,3 +1,7 @@
+function svim
+    sudo vim $argv[1]
+end
+
 function sus
     systemctl suspend
 end
