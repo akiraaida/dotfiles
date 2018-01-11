@@ -17,7 +17,7 @@ function vi() {
 }
 
 function chrome() {
-    google-chrome "$1" > /dev/null 2>&1
+    (google-chrome "$1" > /dev/null 2>&1 &)
 }
 
 function open() {
