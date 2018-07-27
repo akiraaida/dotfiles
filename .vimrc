@@ -1,5 +1,7 @@
 " Set the colorscheme to monokai
-colorscheme monokai
+"colorscheme monokai
+" Set the colorscheme to onedark
+colorscheme onedark
 " Enable syntax for colors
 syntax enable
 " Represents a tab as 4 spaces visually
