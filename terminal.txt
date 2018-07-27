@@ -1,0 +1,2 @@
+Text Colour: #A7A092
+Background Colour: #262626
