@@ -1,0 +1,38 @@
+# Set colours
+set     red="%{\033[1;31m%}"
+set   green="%{\033[1;32m%}"
+set  yellow="%{\033[1;33m%}"
+set    blue="%{\033[1;34m%}"
+set magenta="%{\033[1;35m%}"
+set    cyan="%{\033[1;36m%}"
+set   white="%{\033[0;37m%}"
+set     end="%{\033[0m%}"
+
+set arc_prompt = "[%M]: ${magenta}[%c03] ${white}%g${end}%v%# "
+unset red green yellow blue magenta cyan yellow white end 
+
+# Git related
+alias go 'git checkout'
+alias st 'git status'
+alias push 'git push'
+alias br 'git branch'
+alias upd 'git pull --rebase'
+alias stash 'git stash'
+alias com 'git commit'
+alias diff 'git diff'
+
+# Utility related
+alias c 'clear'
+alias h 'history'                                                                                                   
+alias ls 'ls --color=always'
+alias l 'ls --color=always'
+alias vi 'vim'
+alias cl 'clear && ls'
+alias f 'find . -iname'
+alias g 'grep -isr \!:1 *'
+alias gx 'grep -isr --exclude-dir=\!:1 \!:2 *'
+
+# Dotfiles related
+alias so 'source ~/.cshrc.user'
+alias edc 'vim ~/.cshrc.user'
+alias edv 'vim ~/.vimrc'
